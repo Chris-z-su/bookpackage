@@ -50,7 +50,7 @@ export default {
   data: function () {
     return {
       // tab页
-      activeName: 'bible' // 默认
+      activeName: 'MyChart' // 默认
     }
   },
   created: function () {
