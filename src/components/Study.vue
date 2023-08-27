@@ -1,14 +1,14 @@
 <template>
     <div>
         <el-row>
-            <el-col :span="4">
-                <el-input v-model="content" placeholder="内容" size="small" @keyup.enter.native="queryStudy"></el-input>
+            <el-col :span="4" style="margin-right: 10px;">
+                <el-input v-model="content" placeholder="内容" size="medium" @keyup.enter.native="queryStudy"></el-input>
+            </el-col>
+            <el-col :span="4" style="margin-right: 10px;">
+                <el-button @click="queryStudy" size="medium">搜索</el-button>
             </el-col>
             <el-col :span="4">
-                <el-button @click="queryStudy" size="small">搜索</el-button>
-            </el-col>
-            <el-col :span="4">
-                <el-button @click="updateTiku" size="small">更新题库</el-button>
+                <el-button @click="updateTiku" size="medium">更新题库</el-button>
             </el-col>
         </el-row>
 

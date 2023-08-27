@@ -4,6 +4,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 // 导入axios
 import axios from 'axios'
+// 引入字体样式
+import "@/assets/font/font.css"
 
 // 配置请求根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8088/springboot_study'

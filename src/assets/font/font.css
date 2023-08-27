@@ -1,0 +1,10 @@
+@font-face {
+    /* 自定义字体名称 */
+    font-family:"MyFont";
+    /* 引入字体路径 */
+    src: url('./LXGWWenKaiMono-Bold.ttf');
+    /* 字体粗细 */
+    font-weight: normal;
+    /* 字体风格 */
+    font-style: normal;
+}

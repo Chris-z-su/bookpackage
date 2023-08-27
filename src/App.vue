@@ -69,7 +69,10 @@ export default {
 </script>
 
 <style>
-
+html {
+  font-family: "MyFont";
+  font-size: 20px;
+}
 </style>
 
 <!-- 

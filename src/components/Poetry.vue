@@ -1,24 +1,24 @@
 <template>
     <div>
         <el-row>
-            <el-col :span="4">
-                <el-input v-model="title" placeholder="标题" size="small"></el-input>
+            <el-col :span="4" class="serInput">
+                <el-input v-model="title" placeholder="标题" size="medium"></el-input>
+            </el-col>
+            <el-col :span="4" class="serInput">
+                <el-input v-model="author" placeholder="作者" size="medium"></el-input>
+            </el-col>
+            <el-col :span="4" class="serInput">
+                <el-input v-model="content" placeholder="内容" size="medium"></el-input>
             </el-col>
             <el-col :span="4">
-                <el-input v-model="author" placeholder="作者" size="small"></el-input>
-            </el-col>
-            <el-col :span="4">
-                <el-input v-model="content" placeholder="内容" size="small"></el-input>
-            </el-col>
-            <el-col :span="4">
-                <el-button @click="queryPoetry" size="small">搜索</el-button>
+                <el-button @click="queryPoetry" size="medium">搜索</el-button>
             </el-col>
         </el-row>
 
         <el-row>
-            <el-col :span="5" v-for="(item, index) in poetryList" :key="index">
+            <el-col :span="6" v-for="(item, index) in poetryList" :key="index">
                 <div class="box">
-                    <el-card class="box-card" shadow="hover" style="margin: 10px; height: 400px; overflow-y: auto; overflow-x: hidden;">
+                    <el-card class="box-card card-height" shadow="hover" style="margin: 10px; overflow-y: auto; overflow-x: hidden;">
                         <div slot="header" class="header">
                             <span>{{ item.title }}</span>
                         </div>
@@ -108,8 +108,7 @@ export default {
 </script>
 
 <style>
-
-
-
-
+.serInput{
+    margin-right: 2%; /* 设置底部间距 */
+}
 </style>
